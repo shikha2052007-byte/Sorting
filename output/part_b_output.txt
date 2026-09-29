@@ -1,0 +1,12 @@
+ORIGINAL DATA:
+20(P1) 15(P2) 20(P3) 10(P4) 15(P5) 20(P6) 25(P7) 10(P8) 
+
+--- STABLE MERGE SORT ---
+Stable sorted result:
+10(P4) 10(P8) 15(P2) 15(P5) 20(P1) 20(P3) 20(P6) 25(P7) 
+Number of comparisons: 16
+
+--- STABLE QUICK SORT ---
+Stable sorted result:
+10(P4) 10(P8) 15(P2) 15(P5) 20(P1) 20(P3) 20(P6) 25(P7) 
+Number of comparisons: 17

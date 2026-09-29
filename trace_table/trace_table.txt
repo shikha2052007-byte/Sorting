@@ -1,0 +1,77 @@
+PACKAGE SORTING TRACE TABLE
+
+Initial Data:
+20(P1) 15(P2) 20(P3) 10(P4) 15(P5) 20(P6) 25(P7) 10(P8)
+
+
+MERGE SORT
+
+Division:
+
+20(P1) 15(P2) 20(P3) 10(P4) | 15(P5) 20(P6) 25(P7) 10(P8)
+
+20(P1) 15(P2) | 20(P3) 10(P4) | 15(P5) 20(P6) | 25(P7) 10(P8)
+
+20(P1) | 15(P2) | 20(P3) | 10(P4) | 15(P5) | 20(P6) | 25(P7) | 10(P8)
+
+
+Merging:
+
+20(P1) + 15(P2)
+→ 15(P2) 20(P1)
+
+20(P3) + 10(P4)
+→ 10(P4) 20(P3)
+
+15(P5) + 20(P6)
+→ 15(P5) 20(P6)
+
+25(P7) + 10(P8)
+→ 10(P8) 25(P7)
+
+15(P2) 20(P1) + 10(P4) 20(P3)
+→ 10(P4) 15(P2) 20(P1) 20(P3)
+
+15(P5) 20(P6) + 10(P8) 25(P7)
+→ 10(P8) 15(P5) 20(P6) 25(P7)
+
+Final:
+10(P4) 10(P8) 15(P2) 15(P5) 20(P1) 20(P3) 20(P6) 25(P7)
+
+
+QUICK SORT
+
+Pivot selection: Last element is used as pivot.
+
+Initial pivot:
+10(P8)
+
+Partition result:
+10(P4) 10(P8) 20(P3) 20(P1) 15(P5) 20(P6) 25(P7) 15(P2)
+
+Next partition:
+15(P5) 15(P2) 20(P3) 20(P6) 25(P7) 20(P1)
+
+Next partition:
+20(P3) 20(P6) 20(P1) 25(P7)
+
+Final partition:
+20(P3) 20(P6)
+
+Final Quick Sort result:
+10(P4) 10(P8) 15(P5) 15(P2) 20(P3) 20(P6) 20(P1) 25(P7)
+
+
+STABILITY VERIFICATION
+
+Weight 10:
+Original: P4 → P8
+Stable result: P4 → P8
+
+Weight 15:
+Original: P2 → P5
+Stable result: P2 → P5
+
+Weight 20:
+Original: P1 → P3 → P6
+Stable result: P1 → P3 → P6

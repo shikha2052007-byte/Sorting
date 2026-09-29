@@ -1,0 +1,48 @@
+COMPLEXITY ANALYSIS
+
+MERGE SORT
+
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n log n)
+Space Complexity: O(n)
+Stability: Stable
+
+
+QUICK SORT
+
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n²)
+Space Complexity: O(log n) average for standard in-place Quick Sort
+Stability: Not stable in the standard implementation
+
+
+STABLE QUICK SORT
+
+The modified stable Quick Sort uses additional arrays to preserve
+the order of equal elements.
+
+Average Time Complexity: O(n log n)
+Worst Time Complexity: O(n²)
+Additional Space: O(n)
+
+
+DUPLICATE VALUES
+
+The input contains duplicate weights:
+
+10 occurs 2 times.
+15 occurs 2 times.
+20 occurs 3 times.
+
+Merge Sort can preserve the original order of equal elements.
+Standard Quick Sort does not guarantee preservation of this order.
+
+
+COMPARISON COUNTS FOR THE GIVEN INPUT
+
+Merge Sort: 16
+Quick Sort: 16
+Stable Merge Sort: 16
+Stable Quick Sort: 17

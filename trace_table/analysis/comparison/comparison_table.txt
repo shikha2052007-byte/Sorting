@@ -1,0 +1,22 @@
+COMPARISON OF MERGE SORT AND QUICK SORT
+
+Feature                     Merge Sort          Quick Sort
+--------------------------------------------------------------
+Duplicate values            Yes                 Yes
+Stability                   Stable              Not stable
+Stable modification         Not required        Possible
+Best-case time              O(n log n)          O(n log n)
+Average-case time           O(n log n)          O(n log n)
+Worst-case time             O(n log n)          O(n²)
+Space complexity            O(n)                O(log n) average
+Equal-weight order          Preserved           Not guaranteed
+Comparisons for input       16                  16
+
+
+STABLE VERSION
+
+Feature                     Stable Merge Sort   Stable Quick Sort
+------------------------------------------------------------------
+Stability                   Yes                 Yes
+Comparisons for input      16                  17
+Additional space            O(n)                O(n)
